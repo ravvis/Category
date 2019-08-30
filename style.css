@@ -1,0 +1,127 @@
+.header{
+  font-size: 20px;
+  color: gray;
+  font-weight: bold;
+  padding: 14px 30px 14px 30px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  box-shadow: 3px 3px 18px #888888;
+}
+#head1{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#logo_head{
+  width: auto;
+  height: 35px;
+}
+#knowMore_btn{
+  /* background-image: linear-gradiant(to right, red , yellow);
+   */
+   color: white;
+  background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+  border-radius: 3px;
+    border-width: 1px;
+}
+#attr_btn{
+  background-color: white;
+  color: blue;
+  border-color: blue;
+  border-width: 1px;
+  border-radius: 3px;
+}
+#attr_btn:hover{
+  background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.row{
+  font-family: 'Rubik';
+}
+.card{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content_dest{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+ul{
+
+  text-decoration: none;
+  list-style-type: none;
+ }
+ input[type="radio"] {
+   -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+   -moz-appearance: checkbox;    /* Firefox */
+
+ }
+
+ #theme_dropdown{
+   display: none;
+ }
+#theme_drop_btn_up{
+  display: none;
+}
+#region_dropdown{
+  display: none;
+}
+#region_drop_btn_up{
+  display: none;
+}
+
+#hiking_img{
+  width: 20px;
+  height: 20px;
+}
+.search_bar{
+  font-size: 16px;
+}
+.search_bar button{
+  color: white;
+  background-color: blue;
+  border-width: thin;
+}
+#login_btn{
+  background-color: white;
+  border-color: black;
+  padding: 5px;
+  color: black;
+  font-size: 15px;
+  border-radius:4px;
+  border-width: 1px;
+}
+#login_btn:hover{
+  background-color: black;
+  border-color: white;
+  padding: 5px;
+  color: white;
+  font-size: 15px;
+  border-radius:4px;
+  border-width: 1px;
+}
+
+
+
+@media (max-width: 1000px){
+  .head_forl{
+    display: none;
+  }
+  .filter_class{
+    display: none;
+  }
+  #hide_phone{
+    display: none;
+  }
+}
+@media (min-width: 1000px){
+  .head_forl_menu{
+    display: none;
+  }
+}
+#hidephn_btn_up{
+  display: none;
+}

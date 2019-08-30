@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" href="prop.js"></script>
+  <title>100 Places for a perfect vacation | Travel destinations </title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    $(document).ready(function() {
+      $("#theme_drop_btn_down").click(function() {
+        $("#theme_dropdown").show();
+        $("#theme_drop_btn_down").hide();
+        $("#theme_drop_btn_up").show();
+      });
+      $("#theme_drop_btn_up").click(function() {
+        $("#theme_dropdown").hide();
+        $("#theme_drop_btn_up").hide();
+        $("#theme_drop_btn_down").show();
+      });
+      $("#region_drop_btn_down").click(function() {
+        $("#region_dropdown").show();
+        $("#region_drop_btn_down").hide();
+        $("#region_drop_btn_up").show();
+      });
+      $("#region_drop_btn_up").click(function() {
+        $("#region_dropdown").hide();
+        $("#region_drop_btn_up").hide();
+        $("#region_drop_btn_down").show();
+      });
+      $("#hidephn_btn_down").click(function() {
+        $("#hide_phone").show();
+        $("#hidephn_drop_btn_down").hide();
+        $("#hidephn_drop_btn_up").show();
+      });
+      $("#hidephn_btn_up").click(function() {
+        $("#hide_phone").hide();
+        $("#hidephn_drop_btn_up").hide();
+        $("#hidephn_drop_btn_down").show();
+      });
+    });
+  </script>
+  <title></title>
+</head>
+
+<body>
+
+  <div class="row">
+    <div class="header">
+
+      <div class="container head_forl">
+        <div class="col-lg-1"><img src="Images/logo.png" id="logo_head"></div>
+        <div class="col-lg-3 col-md-3 dropdown"><span id="head1" class="dropdown-toggle" data-toggle="dropdown">Weekends</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Weeken Gateaways</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">collections</a></li>
+            <li><a href="#">blog</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 dropdown"><span id="head1" class="dropdown-toggle" data-toggle="dropdown">Destinations</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">By Region</a></li>
+            <li><a href="#">By Category</a></li>
+            <li><a href="#">International</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <form class="search_bar" action="">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <button type="button" name="button" id="login_btn">Login</button>
+
+      </div>
+      <div class="head_forl_menu">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+    <div class="row">
+      <!-- <div class="container"> -->
+      <div class="col-lg-offset-1 col-lg-2 col-md-2 col-sm-2 filter_class">
+        <div class="card" id="sidebox">
+          <center><i class="fa fa-filter" style="font-size:23px;color:rgb(102, 187, 196)">filter</i> </center><br><br>
+          <section>
+            <b>Theme</b>
+
+            <ul>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"> Hill Stations</li>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"> Beaches</li>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"> Trekkings</li>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"> Road Trips</li>
+              <i class="fa fa-angle-down" id="theme_drop_btn_down"> more..</i>
+              <div id="theme_dropdown">
+                <li><input type="radio" name="gender" value="male" id="radio_theme"> Honeymoon</li>
+                <li><input type="radio" name="gender" value="male" id="radio_theme"> Adventure</li>
+                <li><input type="radio" name="gender" value="male" id="radio_theme"> Wildlife</li>
+                <li><input type="radio" name="gender" value="male" id="radio_theme"> Water Activities</li>
+                <li><input type="radio" name="gender" value="male" id="radio_theme"> Nature</li>
+                <li><input type="radio" name="gender" value="male" id="radio_theme"> Deserts</li>
+                <li><input type="radio" name="gender" value="male" id="radio_theme"> Heritage</li>
+                <li><input type="radio" name="gender" value="male" id="radio_theme"> Most Popular</li>
+                <i class="fa fa-angle-up" id="theme_drop_btn_up"></i>
+              </div>
+
+            </ul>
+
+          </section>
+
+          <hr>
+
+          <section>
+            <b>Region</b>
+            <!-- <div id="region_dropdown"> -->
+            <ul>
+
+              <li>Across Country</li>
+              <li>North India</li>
+              <li>South India</li>
+              <li>East India</li>
+              <i class="fa fa-angle-down" id="region_drop_btn_down"> more..</i>
+              <div id="region_dropdown">
+                <li>West India</li>
+                <li>Central India</li>
+                <li>North - East</li>
+                <li>International</li>
+                <i class="fa fa-angle-up" id="region_drop_btn_up"></i>
+              </div>
+            </ul>
+
+          </section>
+          <hr>
+          <section>
+            <b>Activities</b>
+            <ul>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"><img src="Images/water sports.svg" id="hiking_img"> Water Sports</li>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"><img src="Images/hiking.svg" id="hiking_img"> Trekking</li>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"><img src="Images/hiking.svg" id="hiking_img"> Snow Sports</li>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"><img src="Images/hiking.svg" id="hiking_img"> Extreme Sports</li>
+
+            </ul>
+          </section>
+          <hr>
+          <section>
+            <b>Best time to visit</b>
+            <ul>
+              <li>Jan, Feb, March, April</li>
+            </ul>
+          </section>
+          <section>
+            <b>Popularity</b>
+            <ul>
+              <li>Must Visit</li>
+              <li>You call</li>
+            </ul>
+          </section>
+          <section>
+            <b>Budget</b>
+            <ul>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"> Less than Rs. 5000</li>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"> Rs. 5000 - 10000</li>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"> Rs. 10000 - 15000</li>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"> Rs. 15000 - 20000</li>
+              <i class="fa fa-angle-down" id="theme_drop_btn_down"> more..</i>
+              <div id="theme_dropdown">
+                <li><input type="radio" name="gender" value="male" id="radio_theme"> Rs. 20000 - 25000</li>
+                <li><input type="radio" name="gender" value="male" id="radio_theme"> Rs. 25000 - 35000</li>
+                <li><input type="radio" name="gender" value="male" id="radio_theme"> Rs. 35000 - 55000</li>
+                <li><input type="radio" name="gender" value="male" id="radio_theme"> More than Rs. 55000</li>
+                <i class="fa fa-angle-up" id="theme_drop_btn_up"></i>
+              </div>
+
+            </ul>
+          </section>
+          <section>
+            <b>Days</b>
+            <ul>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"> Less than Rs. 5000</li>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"> Rs. 5000 - 10000</li>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"> Rs. 10000 - 15000</li>
+              <li><input type="radio" name="gender" value="male" id="radio_theme"> Rs. 15000 - 20000</li>
+            </ul>
+          </section>
+
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <b>1. Agra, Utter Pradesh</b><br>
+              <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+              <div class="content_dest">
+                <p>210 kms from Delhi<br>
+                  <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                  <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                  Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                  history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                  anyone living in or visiting India.<br>
+                  <b>Best time</b> : October to March<br>
+
+                  <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <b>1. Agra, Utter Pradesh</b><br>
+              <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+              <div class="content_dest">
+                <p>210 kms from Delhi<br>
+                  <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                  <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                  Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                  history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                  anyone living in or visiting India.<br>
+                  <b>Best time</b> : October to March<br>
+
+                  <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <b>1. Agra, Utter Pradesh</b><br>
+              <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+              <div class="content_dest">
+                <p>210 kms from Delhi<br>
+                  <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                  <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                  Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                  history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                  anyone living in or visiting India.<br>
+                  <b>Best time</b> : October to March<br>
+
+                  <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <b>1. Agra, Utter Pradesh</b><br>
+              <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+              <div class="content_dest">
+                <p>210 kms from Delhi<br>
+                  <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                  <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                  Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                  history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                  anyone living in or visiting India.<br>
+                  <b>Best time</b> : October to March<br>
+
+                  <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <b>1. Agra, Utter Pradesh</b><br>
+              <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+              <div class="content_dest">
+                <p>210 kms from Delhi<br>
+                  <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                  <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                  Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                  history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                  anyone living in or visiting India.<br>
+                  <b>Best time</b> : October to March<br>
+
+                  <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <b>1. Agra, Utter Pradesh</b><br>
+              <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+              <div class="content_dest">
+                <p>210 kms from Delhi<br>
+                  <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                  <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                  Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                  history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                  anyone living in or visiting India.<br>
+                  <b>Best time</b> : October to March<br>
+
+                  <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <b>1. Agra, Utter Pradesh</b><br>
+              <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+              <div class="content_dest">
+                <p>210 kms from Delhi<br>
+                  <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                  <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                  Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                  history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                  anyone living in or visiting India.<br>
+                  <b>Best time</b> : October to March<br>
+
+                  <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <b>1. Agra, Utter Pradesh</b><br>
+              <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+              <div class="content_dest">
+                <p>210 kms from Delhi<br>
+                  <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                  <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                  Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                  history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                  anyone living in or visiting India.<br>
+                  <b>Best time</b> : October to March<br>
+
+                  <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <b>1. Agra, Utter Pradesh</b><br>
+              <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+              <div class="content_dest">
+                <p>210 kms from Delhi<br>
+                  <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                  <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                  Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                  history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                  anyone living in or visiting India.<br>
+                  <b>Best time</b> : October to March<br>
+
+                  <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="hide_phone">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card">
+                <b>1. Agra, Utter Pradesh</b><br>
+                <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+                <div class="content_dest">
+                  <p>210 kms from Delhi<br>
+                    <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                    <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                    Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                    history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                    anyone living in or visiting India.<br>
+                    <b>Best time</b> : October to March<br>
+
+                    <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <b>1. Agra, Utter Pradesh</b><br>
+                <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+                <div class="content_dest">
+                  <p>210 kms from Delhi<br>
+                    <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                    <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                    Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                    history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                    anyone living in or visiting India.<br>
+                    <b>Best time</b> : October to March<br>
+
+                    <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <b>1. Agra, Utter Pradesh</b><br>
+                <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+                <div class="content_dest">
+                  <p>210 kms from Delhi<br>
+                    <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                    <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                    Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                    history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                    anyone living in or visiting India.<br>
+                    <b>Best time</b> : October to March<br>
+
+                    <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card">
+                <b>1. Agra, Utter Pradesh</b><br>
+                <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+                <div class="content_dest">
+                  <p>210 kms from Delhi<br>
+                    <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                    <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                    Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                    history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                    anyone living in or visiting India.<br>
+                    <b>Best time</b> : October to March<br>
+
+                    <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <b>1. Agra, Utter Pradesh</b><br>
+                <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+                <div class="content_dest">
+                  <p>210 kms from Delhi<br>
+                    <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                    <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                    Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                    history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                    anyone living in or visiting India.<br>
+                    <b>Best time</b> : October to March<br>
+
+                    <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <b>1. Agra, Utter Pradesh</b><br>
+                <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+                <div class="content_dest">
+                  <p>210 kms from Delhi<br>
+                    <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                    <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                    Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                    history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                    anyone living in or visiting India.<br>
+                    <b>Best time</b> : October to March<br>
+
+                    <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card">
+                <b>1. Agra, Utter Pradesh</b><br>
+                <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+                <div class="content_dest">
+                  <p>210 kms from Delhi<br>
+                    <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                    <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                    Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                    history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                    anyone living in or visiting India.<br>
+                    <b>Best time</b> : October to March<br>
+
+                    <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <b>1. Agra, Utter Pradesh</b><br>
+                <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+                <div class="content_dest">
+                  <p>210 kms from Delhi<br>
+                    <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                    <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                    Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                    history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                    anyone living in or visiting India.<br>
+                    <b>Best time</b> : October to March<br>
+
+                    <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <b>1. Agra, Utter Pradesh</b><br>
+                <img src="Images/tajmahal.jpg" alt="taj mahal" width="100%">
+                <div class="content_dest">
+                  <p>210 kms from Delhi<br>
+                    <span>Current Weather <i class='fas fa-cloud-sun'></i></span> 12-21&#176 C<br>
+                    <b>Known For : <a>Taj mahal</a> | <a>Fatehpur Sikri</a> | <a>Agra Fort</a> </b><br>
+                    Home to one of the 7 wonders of the world, Taj Mahal, Agra is a sneak peek into the archtectural
+                    history with other structures such as Agra Fort and Fatehpur Sikri and hence for a must visit for
+                    anyone living in or visiting India.<br>
+                    <b>Best time</b> : October to March<br>
+
+                    <button id="knowMore_btn">Know More</button> <button id="attr_btn"> 18 Agra Attractions </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div><i class="fa fa-angle-down" id="hidephn_btn_down"> more..</i><i class="fa fa-angle-up" id="hidephn_btn_up"></i></div>
+
+      </div>
+
+    </div>
+    <!-- </div> -->
+</body>
+
+</html>
